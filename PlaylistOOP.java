@@ -58,9 +58,7 @@ public class PlaylistOOP {
         sc.close();
     }
 
-    // -----------------------------------------------------------------
     // Sesi Admin (memanggil method dari class Admin di Admin.java)
-    // -----------------------------------------------------------------
     private static void loginAdmin() {
         System.out.print("\nMasukkan nama Admin: ");
         String nama = sc.nextLine().trim();
@@ -106,9 +104,7 @@ public class PlaylistOOP {
         }
     }
 
-    // -----------------------------------------------------------------
     // Sesi Member (memanggil method dari class Member di Member.java)
-    // -----------------------------------------------------------------
     private static void loginMember() {
         System.out.print("\nMasukkan nama Member: ");
         String nama = sc.nextLine().trim();
@@ -141,7 +137,7 @@ public class PlaylistOOP {
                     System.out.printf("Rata-rata durasi lagu: %.2f menit%n", rata);
                     break;
                 case "4":
-                    member.getUserDetails();
+                    member.tampilkanInfo();
                     break;
                 case "5":
                     member.tampilkanAkses();
@@ -156,12 +152,10 @@ public class PlaylistOOP {
         }
     }
 
-    // -----------------------------------------------------------------
     // Mode Testing / Demo
     // Menjalankan skenario otomatis untuk membuktikan seluruh fitur
     // (enkapsulasi, inheritance, polymorphism) berjalan dengan benar,
     // dengan memanggil method dari class Admin, Member, Lagu, dan User.
-    // -----------------------------------------------------------------
     private static void jalankanTesting() {
         System.out.println("\n=====================================");
         System.out.println("         MODE TESTING / DEMO        ");
@@ -201,9 +195,7 @@ public class PlaylistOOP {
         System.out.println("\nTesting selesai. Data lagu di atas ikut tersimpan pada playlist utama.");
     }
 
-    // -----------------------------------------------------------------
     // Utility: menampilkan seluruh isi playlist (memanggil Lagu.tampilkanInfo())
-    // -----------------------------------------------------------------
     private static void tampilkanSemuaLagu() {
         if (jumlahLagu == 0) {
             System.out.println("Playlist masih kosong.");
@@ -215,9 +207,7 @@ public class PlaylistOOP {
         }
     }
 
-    // -----------------------------------------------------------------
     // Utility: membaca input angka desimal dengan validasi sederhana
-    // -----------------------------------------------------------------
     private static double bacaDouble(String pesan) {
         while (true) {
             System.out.print(pesan);
