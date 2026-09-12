@@ -1,3 +1,10 @@
+// Nama dan NIM Team Assignment 1 DSSA (LEC)
+// CHRISTIAN HOTASI VICCARE HUTAGAOL - 2902804014
+// FAIZA KURNIAWATI - 2902807880
+// ARI JUNIANTO - 2902828701
+// UTAS PRASOJO - 2902809551
+// HANDSON PANGGABEAN - 2902820005
+
 public class Member extends User {
 
     public Member(String nama) {
@@ -42,10 +49,5 @@ public class Member extends User {
     @Override
     public void tampilkanAkses() {
         System.out.println("Member bisa melihat, mencari lagu, dan menghitung rata-rata durasi.");
-    }
-
-    public void getUserDetails() {
-        System.out.println("Nama: " + getNama());
-        System.out.println("Role: " + getRole());
     }
 }
